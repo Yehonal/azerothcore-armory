@@ -11,10 +11,6 @@ services:
             - .env
         networks:
             - local-private-net
-        # allow the container to access the host machine
-        # this is useful for development purposes, e.g. to access the database/AC server running on the host
-        extra_hosts:
-        - "host.docker.internal:host-gateway"
         ports:
             - 48733:48733
 
